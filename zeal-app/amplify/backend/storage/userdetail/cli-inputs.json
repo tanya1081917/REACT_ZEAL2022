@@ -1,0 +1,10 @@
+{
+  "resourceName": "userdetail",
+  "tableName": "userdetail",
+  "partitionKey": {
+    "fieldName": "Y",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

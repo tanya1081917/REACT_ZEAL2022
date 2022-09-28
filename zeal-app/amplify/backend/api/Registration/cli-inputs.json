@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/registration/{registerUserName}": {
+      "name": "/registration/{registerUserName}",
+      "lambdaFunction": "regitrationProcess",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
