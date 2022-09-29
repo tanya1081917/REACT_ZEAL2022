@@ -16,7 +16,7 @@ const Registration = () => {
         let registrationId = "Jitendra2611";
         API.get(myAPI, path + "/" + registrationId)
             .then(response => {
-                console.log("tanya "+response.get());
+                console.log("tanya "+response.value);
                 let newCustomers = [...customers]
                 newCustomers.push(response)
                 setCustomers(newCustomers)
@@ -41,9 +41,20 @@ const Registration = () => {
             {
                 customers.map((thisCustomer, index) => {
                     return (
-                        <div key={thisCustomer.customerId}>
-                            <span><b>RegistrationId:</b> {thisCustomer.customerId} - <b>Registrationame</b>: {thisCustomer.customerName}</span>
-                        </div>)
+                       /* <div key={thisCustomer.customerId}>*/
+
+
+
+                            <ul>
+
+                                {thisCustomer.map(user => (
+                                   <b> <li key={user.Y}>{user.office}</li></b>
+
+                                ))}
+                            </ul>
+
+                            /*<span><b>RegistrationId:</b> {thisCustomer.customerId} - <b>Registrationame</b>: {thisCustomer.customerName}</span>*/
+                        /*</div>*/)
                 })
             }
         </div>
