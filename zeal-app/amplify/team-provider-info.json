@@ -1,23 +1,50 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-zdashboard-dev-124739-authRole",
-      "UnauthRoleArn": "arn:aws:iam::797676417790:role/amplify-zdashboard-dev-124739-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::797676417790:role/amplify-zdashboard-dev-124739-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-zdashboard-dev-124739-deployment",
-      "UnauthRoleName": "amplify-zdashboard-dev-124739-unauthRole",
-      "StackName": "amplify-zdashboard-dev-124739",
-      "StackId": "arn:aws:cloudformation:us-east-1:797676417790:stack/amplify-zdashboard-dev-124739/a5b27f20-3efd-11ed-b534-0e5eefbe3603",
-      "AmplifyAppId": "dlaprd05md25"
-    },
-    "categories": {
-      "function": {
-        "regitrationProcess": {
-          "deploymentBucketName": "amplify-zdashboard-dev-124739-deployment",
-          "s3Key": "amplify-builds/regitrationProcess-617237644b7a72544e75-build.zip"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-zdashboard-dev-124739-authRole",
+            "UnauthRoleArn": "arn:aws:iam::797676417790:role/amplify-zdashboard-dev-124739-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::797676417790:role/amplify-zdashboard-dev-124739-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-zdashboard-dev-124739-deployment",
+            "UnauthRoleName": "amplify-zdashboard-dev-124739-unauthRole",
+            "StackName": "amplify-zdashboard-dev-124739",
+            "StackId": "arn:aws:cloudformation:us-east-1:797676417790:stack/amplify-zdashboard-dev-124739/a5b27f20-3efd-11ed-b534-0e5eefbe3603",
+            "AmplifyAppId": "dlaprd05md25"
+        },
+        "categories": {
+            "function": {
+                "regitrationProcess": {
+                    "deploymentBucketName": "amplify-zdashboard-dev-124739-deployment",
+                    "s3Key": "amplify-builds/regitrationProcess-617237644b7a72544e75-build.zip"
+                }
+            }
         }
-      }
+    },
+    "zeal": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-zdashboard-zeal-143336-authRole",
+            "UnauthRoleArn": "arn:aws:iam::007923285948:role/amplify-zdashboard-zeal-143336-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::007923285948:role/amplify-zdashboard-zeal-143336-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-zdashboard-zeal-143336-deployment",
+            "UnauthRoleName": "amplify-zdashboard-zeal-143336-unauthRole",
+            "StackName": "amplify-zdashboard-zeal-143336",
+            "StackId": "arn:aws:cloudformation:us-east-1:007923285948:stack/amplify-zdashboard-zeal-143336/47115990-42fa-11ed-ba7f-0aeaaa90c8cb",
+            "AmplifyAppId": "d3rmpjkt9wpqo3"
+        },
+        "categories": {
+            "function": {
+                "regitrationProcess": {
+                    "deploymentBucketName": "amplify-zdashboard-zeal-143336-deployment",
+                    "s3Key": "amplify-builds/regitrationProcess-617237644b7a72544e75-build.zip"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3rmpjkt9wpqo3",
+                    "type": "cicd"
+                }
+            }
+        }
     }
-  }
 }
