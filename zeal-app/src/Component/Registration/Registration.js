@@ -13,7 +13,7 @@ const Registration = () => {
     //Function to fetch from our backend and update customers array
     function getRegistration(e) {
         /*let registrationId = e.input*/
-        let registrationId = "Jitendra2611";
+        let registrationId = "tanya.agarwal10@gmail.com";
         API.get(myAPI, path + "/" + registrationId)
             .then(response => {
                 console.log("tanya "+response.value);

@@ -1,62 +1,80 @@
-import logo from './logo.svg';
+/*import logo from './logo.svg';*/
 import './App.css';
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import HomeScreen from './screens/HomeScreen'
-import ProductScreen from './screens/ProductScreen'
-import CartScreen from './screens/CartScreen'
-import LoginScreen from './screens/LoginScreen'
-import RegisterScreen from './screens/RegisterScreen'
-import ProfileScreen from './screens/ProfileScreen'
-import ShippingScreen from './screens/ShippingScreen'
-import PaymentScreen from './screens/PaymentScreen'
-import PlaceOrderScreen from './screens/PlaceOrderScreen'
-import OrderScreen from './screens/OrderScreen'
-import UserListScreen from './screens/UserListScreen'
-import UserEditScreen from './screens/UserEditScreen'
-import ProductListScreen from './screens/ProductListScreen'
-import ProductEditScreen from './screens/ProductEditScreen'
-import OrderListScreen from './screens/OrderListScreen'
 
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {Link, Router, useLocation} from 'react-router-dom'
 
+import { Route ,Routes} from "react-router"
+import HomeScreen from "./Screens/HomeScreen";
+import Layout from "./Component/Layout";
+import RegistrationScreen from "./Screens/registrationScreeen";
+import CustomRouter from "./CustomRouter";
+import {createBrowserHistory} from "history";
+
+const historyObject = createBrowserHistory({ window });
+/*
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Header/>
+            <main className='py-3'>
+                <Container>
+                    <Routes>
+                    <Route path='/'  element={<HomeScreen/>}  />
+                    </Routes>
+                </Container>
+            </main>
+            <Footer/>
+        </BrowserRouter>
+
+       /!* <div className="App">
+            <h1>Tanya</h1>
+            <ButtonDropdown>kldltek</ButtonDropdown>
+        </div>*!/
+    )
+}
+*/
+
+
+/*const App = () =>{
+    const location = useLocation();
+    console.log('hash', location.hash);
+    console.log('pathname', location.pathname);
+    console.log('search', location.search);
+
+    return(
+      <Router location={location} basename={basename} children={children}
+              location={state.location}
+              navigationType={state.action}
+              navigator={history}
+      >
+        <Routes>
+                {/!*<Route   element={<Layout />} >*!/}
+                    <Route exact path="/" element={<HomeScreen />} />
+                    <Route exact path ="/registration" element={<RegistrationScreen/>} />
+
+               {/!* <Route path="/ConfirmEmail" element={<ConfirmEmail />} />*!/} /
+            </Routes>
+      </Router>
+
+
+    );
 }*/
 
 
-
-const App = () => {
-  return (
-      <Router>
-        <Header />
-        <main className='py-3'>
-          <Container>
-            <Route path='/registration' component={OrderScreen} />
-          </Container>
-        </main>
-        <Footer />
-      </Router>
-  )
+const App =()=> {
+    return (
+        <CustomRouter history={historyObject}>
+            <div className="App">
+                <Routes>
+                    <Route path="/" element={<HomeScreen />} />
+                    <Route path="/profile" element={<RegistrationScreen />} />
+                </Routes>
+            </div>
+        </CustomRouter>
+    );
 }
+
 
 export default App;
