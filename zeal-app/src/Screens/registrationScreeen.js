@@ -39,17 +39,11 @@ const RegisterScreen = ({ location, history }) => {
     return (
         <FormContainer>
             <h1>Sign Up</h1>
-<<<<<<< HEAD
+
           {/*  {message && <Message variant='danger'>{message}</Message>}
             {error && <Message variant='danger'>{error}</Message>}
             {loading && <Loader />}*/}
        {/*     <Form onSubmit={submitHandler}>
-=======
-            {message && <Message variant='danger'>{message}</Message>}
-            {error && <Message variant='danger'>{error}</Message>}
-            {loading && <Loader />}
-            <Form onSubmit={submitHandler}>
->>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
                 <Form.Group controlId='name'>
                     <Form.Label>Name</Form.Label>
                     <Form.Control
@@ -97,25 +91,20 @@ const RegisterScreen = ({ location, history }) => {
             </Form>*/}
 
           {/* { <Row className='py-3'>
-=======
+
             </Form>
 
            { <Row className='py-3'>
->>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
                 <Col>
                     Have an Account?{' '}
                     <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
                         Login
                     </Link>
                 </Col>
-<<<<<<< HEAD
+
             </Row>}*/}
         </FormContainer>
 
-=======
-            </Row>}
-        </FormContainer>
->>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
     )
 }
 

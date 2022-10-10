@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
-import axios from 'axios'
->>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
+
+import axios, {Axios} from 'axios'
 import {
     USER_REGISTER_FAIL,
     USER_REGISTER_REQUEST,
@@ -21,23 +19,17 @@ export const register = (name, email, password) => async (dispatch) => {
                 'Content-Type': 'application/json',
             },
         }
-<<<<<<< HEAD
 
-        const myAPI = "Registration"
-        const path = '/registration/:registerUserName';
 
-        const { data } = await API.post(myAPI, path,{ name, email, password })
-=======
         const name = String(name);
         const myAPI = "Registration"
         const path = '/registration/:registerUserName';
 
-        const { data } = await API.post(
+        const { data } = await Axios.post(
             path,
             { name, email, password },
             config
         )
->>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
 
         dispatch({
             type: USER_REGISTER_SUCCESS,
