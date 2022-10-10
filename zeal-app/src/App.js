@@ -1,6 +1,15 @@
 /*import logo from './logo.svg';*/
 import './App.css';
 import React from 'react'
+<<<<<<< HEAD
+=======
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Container } from 'reactstrap'
+import Header from './Component/Header'
+import Footer from './Component/Footer'
+import RegisterScreen from './Screens/registrationScreeen'
+
+>>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
 
 import {Link, Router, useLocation} from 'react-router-dom'
 
@@ -63,6 +72,7 @@ const App = () => {
 }*/
 
 
+<<<<<<< HEAD
 const App =()=> {
     return (
         <CustomRouter history={historyObject}>
@@ -74,6 +84,21 @@ const App =()=> {
             </div>
         </CustomRouter>
     );
+=======
+
+const App = () => {
+  return (
+      <Router>
+        <Header />
+        <main className='py-3'>
+          <Container>
+            <Route path='/registration' component={RegisterScreen} />
+          </Container>
+        </main>
+        <Footer />
+      </Router>
+  )
+>>>>>>> 4d041685c61d3d6d4b1088a63c26c4d9c494945d
 }
 
 
